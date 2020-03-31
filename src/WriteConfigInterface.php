@@ -4,5 +4,5 @@ namespace src;
 
 interface WriteConfigInterface
 {
-    public function write();
+    public function write($writeArrayConfigPath, $yourTextArrayPath): void;
 }
