@@ -2,12 +2,13 @@
 
 namespace src;
 
-class ReadConfigJson
+class ReadConfigJson implements ReadConfigInterface
 {
-    public function read($path): object
+    public function read($path): array
     {
         $jsonContent = file_get_contents($path);
         $json = json_decode($jsonContent);
-        return $json;
+        $jsonArray = (array) $json;
+        return $jsonArray;
     }
 }

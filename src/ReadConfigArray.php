@@ -2,12 +2,10 @@
 
 namespace src;
 
-class ReadConfigArray
+class ReadConfigArray implements ReadConfigInterface
 {
-    public function read(): string
+    public function read($path): array
     {
-        $arrayContent = file_get_contents();
-        $arrayValue = explode();
-        return $arrayValue;
+
     }
 }
