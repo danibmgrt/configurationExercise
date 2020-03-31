@@ -4,9 +4,10 @@ namespace src;
 
 class ReadConfigJson
 {
-    public function read(): string
+    public function read(): object
     {
-        $json = json_decode(__DIR__ . '/../configToRead', true);
+        $jsonContent = file_get_contents(__DIR__ . '/../configToRead');
+        $json = json_decode($jsonContent);
         return $json;
     }
 }

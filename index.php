@@ -6,5 +6,5 @@ use src\ReadConfigJson;
 use src\WriteConfigJson;
 
 $readJson = new ReadConfigJson();
-//$readJson->read();
-var_dump($readJson->read());
+$jsonValues = $readJson->read();
+var_dump($jsonValues);
