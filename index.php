@@ -10,3 +10,10 @@ $jsonPath = __DIR__ . "/configToRead";
 $readJson = new ReadConfigJson();
 $jsonValues = $readJson->read($jsonPath);
 var_dump($jsonValues);
+
+$arrayPath = __DIR__ . "/array.txt";
+$readArray = new ReadConfigArray();
+$arrayValue = $readArray->read($arrayPath);
+var_dump($arrayValue);
+
+
