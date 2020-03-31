@@ -1,0 +1,17 @@
+{
+    "name": "daniel/configuration-exercise",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Daniel Baumgart",
+            "email": "daniel.baumgart@check24.de"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Acme\\": "src/"
+        }
+    }
+}
