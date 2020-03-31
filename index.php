@@ -22,7 +22,7 @@ $yourTextPath = __DIR__ . "/yourText.json";
 $writeJson = new WriteConfigJson();
 $writeJson->write($writeJsonPath, $yourTextPath);
 
-$writeArrayPath = __DIR__ . "/writeArrayConfig.txt";
+$writeArrayPath = __DIR__ . "/writeArrayConfig.json";
 $yourArrayTextPath = __DIR__ . "/yourTextArray.txt";
 $writeArray = new WriteConfigArray();
 $writeArray->write($writeArrayPath, $yourArrayTextPath);
